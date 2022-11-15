@@ -26,6 +26,8 @@ app.post("/insert",async (req,resp)=>{
     const val=await data.save();
     resp.json(val);
 })
+
+//update by phone number
 app.put("/update/:phone",async (req,resp)=>{
     let upphone=req.params.phone;
     let upname= req.body.name;
